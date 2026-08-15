@@ -1,7 +1,6 @@
 # Attendance Management System
 
 A desktop-based **Attendance Management System** built with **C++17** and **Qt Widgets**.
-
 The application provides separate portals for **Admin, Teacher, and Student** with role-based access, time-limited OTP attendance, medical attendance exemptions, attendance eligibility, admit-card processing, audit logging, and local data persistence.
 
 ## Features
@@ -61,7 +60,7 @@ Attendance Recorded
 | Expired OTP | Rejected |
 | Admit Card Threshold | 75% |
 
-## Attendance Formula
+### Attendance Formula
 
 The system calculates attendance using attended sessions and approved medical exemptions.
 
