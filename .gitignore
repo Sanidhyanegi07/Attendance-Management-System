@@ -1,0 +1,37 @@
+# Qt Creator user-specific files
+*.pro.user
+*.pro.user.*
+*.user
+*.user.*
+
+# Build directories
+build/
+build-*/
+cmake-build-*/
+out/
+Debug/
+Release/
+
+# Visual Studio / IDE files
+.vscode/
+.idea/
+.vs/
+
+# Generated Qt files
+moc_*
+ui_*
+qrc_*
+
+# Application runtime data
+gehu_data.json
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
