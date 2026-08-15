@@ -43,51 +43,52 @@ A desktop-based Attendance Management System built with **C++17 and Qt Widgets**
 
 ## Attendance System
 
-Teachers start an attendance session for an assigned subject.
-The system generates a **4-character OTP** that is valid for exactly **120 seconds**.
+### How Attendance Works
 
-Teacher
-   ↓
-Select Subject
-   ↓
-Start Attendance Session
-   ↓
-4-Character OTP Generated
-   ↓
-Valid for 120 Seconds
-   ↓
-Student Submits OTP
-   ↓
-System Validates Session + OTP + Expiry
-   ↓
-Attendance Recorded
+- A Teacher selects an assigned subject.
+- The Teacher starts an attendance session.
+- The system generates a 4-character OTP.
+- The OTP remains valid for 120 seconds.
+- Students submit the OTP during the active session.
+- The system validates the subject, session, OTP, expiry time, and duplicate submission.
+- Valid submissions are recorded as attendance.
 
-## Attendance Formula
+### Attendance Rules
 
- (Attended Sessions + Medical Exemptions)
----------------------------------------- × 100
-           Total Sessions Held
+- OTP length: 4 characters
+- OTP validity: 120 seconds
+- Duplicate submissions: Rejected
+- Expired OTP submissions: Rejected
+- Attendance is calculated from the stored session records.
+- Medical exemptions are kept separately and included in the eligibility calculation.
+
+### Attendance Formula
+
+Attendance % = ((Attended Sessions + Medical Exemptions)
+                / Total Sessions Held) × 100
 
 ## Default Admin
 
-Username: admin
-Password: admin123
+- Username: admin
+- Password: admin123
 
 ## Demo Accounts
 
-Teachers:
-drsingh / teacher123
-profkaur / teacher123
-profverma / teacher123
+### Teachers
 
-Students:
-stu001 / student123
-stu002 / student123
-stu003 / student123
+- drsingh / teacher123
+- profkaur / teacher123
+- profverma / teacher123
+
+### Students
+
+- stu001 / student123
+- stu002 / student123
+- stu003 / student123
 
 ## Demo Subjects
 
-CS101 - Data Structures & Algorithms
-CS102 - Operating Systems
-CS201 - Database Management Systems
-CS301 - Computer Networks
+- CS101 - Data Structures & Algorithms
+- CS102 - Operating Systems
+- CS201 - Database Management Systems
+- CS301 - Computer Networks
