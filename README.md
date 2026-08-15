@@ -64,7 +64,7 @@ A desktop-based Attendance Management System built with **C++17 and Qt Widgets**
 
 ### Attendance Formula
 
-Attendance % = (( Attended Sessions + Medical Exemptions )
+- Attendance % = (( Attended Sessions + Medical Exemptions )
                 / Total Sessions Held ) × 100
 
 ## Default Admin
